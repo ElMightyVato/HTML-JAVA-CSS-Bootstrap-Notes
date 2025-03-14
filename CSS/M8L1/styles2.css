@@ -1,0 +1,18 @@
+/* Previous CSS rules */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+/* Here we are grouping multiple sections to apply our font-family separated by commas */
+
+/* Descendant combinator */
+article p {
+    color:slategray;
+}
+/* it doesn't matter how nested down this p is it's going to have the color applied */
+
+/* Child combinator */
+article > p {
+    margin-left: 20px;
+}
+
+/* This has to be a child of article it cannot be nested somewhere else */

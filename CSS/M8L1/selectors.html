@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to our Digital Theater!</title>
+            <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, intital-scale=1.0"> 
+            <meta name="description" content="A showcase of basic HTML elements ina  'Hello World' example."> 
+            <meta name="author" content="Web Decelopment Mentor"> 
+          </head>
+       <!-- <link rel="stylesheet" href="styles.css"> -->>
+
+       <!-- heiarchary of imporant the very top is most imporant followed by bottom -->
+        <!-- Classes help override heiarchys so for example below we have a p that we assign a class to
+         instead of it's font size changing instead it'll be applying what we've selected for the class -->
+         <!-- a . identifies a class whereas a # signifies an id the way the ranking goes is id, class, element but quick note
+          imporant takes the highest priority followed by inline elements since they affect the code directly -->
+       <style>
+            body {
+                background-color: lightgray;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .special-text {
+                color: darkcyan;
+                font-weight: bold;
+            }
+
+            #main-heading { 
+                color: darkmagenta;
+                font-size: 24px;
+            }
+
+            .urgent-text {
+                color: red !important;
+            }
+       </style>
+    </head>
+
+    <body>
+        <h1 id="main-heading" style="color: royalblue;">Hello World</h1>
+        <p>Welcome to our Digital theater! Enjoy the show.</p>
+        <h2>The stage of HTML</h2>
+        <p>Our digital stage is set with various HTML elements that bring life to web pages.</p>
+        <p class="special-text">This is <strong>important</strong> and <em>emphasized</em> text. </p> <!-- Strong is for important bold <b> is just bold and em makes it both italized and bold -->
+
+        <h3>Props List:</h3>
+        <ul> 
+            <li>Scenes (divs)</li> 
+            <li>Costumes (css)</li>
+            <li>Scripts (Javascript)</li>
+        </ul>
+
+        <p class="special-text">Discover more about HTML at <a href="https://www.w3schools.com/html/default.asp">Our HTML Theater</a>.</p> <!-- a is known as an anchor tag thus converting it into a blue hyperlink -->
+        <img src="theater.png" alt="A beautiful digital theater">
+
+        <p>This is the first line. <br>This is the second line.</p> 
+        <hr> 
+        <p class="urgent-text">Did you know that the &lt; symbol isd used to start HTML tags?</p>
+</body>
+</html>

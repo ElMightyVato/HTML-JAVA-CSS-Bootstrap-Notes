@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: rgba(240,242,245,1); /* Solid Background */
+}
+/* RGBA stands for red,green,blue,alpha and alpha is for transparancy */
+
+header {
+    background-color: rgba(0,123,255,0.8); /* Slightly transparent header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around; /* Adjusts spacing around container elements */
+}
+
+nav, section, article, aside {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(255,255,255,0.9); /* Slightly transparent white for layering effect */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav, .main-content, aside {
+    flex: 1;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+
+footer {
+    background-color: rgba(51,51,51,0.8); /* Slightly transparent footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* styling the table, buttons, etc. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding:10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgba(24,247,247,0.8); /* Slightlyt Transparent header cells */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgba(40,167,69,0.8); /* slightly transparent green button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(33,136,56,0.8);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid rgba(255,255,255,0.6); /* Adding a border with transparency around the image */
+}
+
+/* Adding Gradients for visual interest */
+nav, footer {
+    background: linear-gradient(145deg, rgba(0,123,255,0.8), rgba(107,168,229, 0.8));
+}
+
+.main-content, aside {
+    background: linear-gradient(145def, rgba(255,255,255,0.9), rgba(230,230,230,0.9));
+} /* it will take one color and perform a gradient to the next color */
+
+/* Shadow text styling */
+section, article, aside {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Horizontal, vertical, blur, color */
+}
+
+h1 {
+    background: linear-gradient(to right, #007bff, #6610f2); /* effects the wall paper behind text */
+    -webkit-background-clip: text; /* what this does is it takes the texts and clips the background to it */
+    color: transparent; /*makes it so we can't see it */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* this adds a shadow to the text */
+}
+
+nav a:hover {
+    transition: color 0.3 ease; /* check the docs to see the types of transitions you can do */
+    color: #ff4500; /* changes link color smoothly over hover */
+}
+
+img {
+    animation: rotate 10s infinite linear; /* This allows our image to rotate in a circle LINEAR means it will always rotate at 
+    the same speed */
+}
+
+@keyframes rotate { /* here we are defining rotate up top at what rotating speed we want */
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360def);}
+}

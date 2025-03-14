@@ -1,0 +1,22 @@
+/* this will only work on sections not aside or articles since we are targeting sections and a first child would be the 
+first p that it see's in the section if it's after h2 or anything else it will not run*/
+section > p:first-child {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+/* When you hover over something it will initiate waht we have listed here so the background will turn white when we go over it */
+table tr:hover {
+    background: #f5f5f5;
+}
+
+audio:focus, video:focus, audio:hover, video:hover {
+    outline: 2px solid #ff4500;
+    cursor: pointer;
+}
+
+/* hover is to hover over something, focus is when we want to interact with something */

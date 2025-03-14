@@ -1,0 +1,42 @@
+body {
+   font-family: 'Georgia', serif;
+   line-height: normal;
+   color: #333;
+   background-color: #f4f4f4;
+}
+/* we're chosing a font to be applied to everything on the page with font-family */
+p {
+    font-size: 16px; 
+    margin-bottom: 1rem;
+} /* em get the size of it's nearest parent's font size whereas rem get it's font based of off it's body */
+
+.special-text {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#main-heading { 
+    color: darkmagenta;
+    font-size: 24px;
+}
+
+.urgent-text {
+    color: red !important;
+}
+
+/* Previous CSS rules */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Descendant combinator */
+article p {
+    color:slategray;
+}
+
+/* Child combinator */
+article > p {
+    margin-left: 20px;
+}

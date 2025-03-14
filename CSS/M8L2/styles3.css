@@ -1,0 +1,38 @@
+/* Styling Tables */
+table {
+    border-collapse: collapse; /* having this allow us to make sure teh borders are mergered perfectly well */ 
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: #04AA6D;
+    color: white;
+}
+
+tr:nth-child(even) { /* here we are making sure that every even color is turning white */
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
