@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Resume</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Contact form section -->
+     <aside id="contact-me" class="container my-4 bg-light p-3 rounded">
+        <h1 class="h4">Contact Me</h1>
+        <form action="/submit" method="post" class="p-3 rounded needs-validation" novalidate>
+            <!-- no validate will turn off validation on all browser and needs validation will turn on bootstraps validation -->
+            <fieldset>
+                <legend class="h6">Contact Information</legend>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                    <label for="full-name">Full Name</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <div class="form-flaoting mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" patter="[0-9]{10}" required>
+                    <label for="phone">Phone Number</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
+                </div>
+            </fieldset>
+
+            <div class="form-flaoting mb-3">
+                <textarea class="form-control" id="message" name="message" row="6" placeholder="Your message here" required></textarea>
+                <label for="message">Message</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your message.</div>
+            </div>
+            
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+     </aside>
+
+     <script>
+
+        //Only need to worry about the bottom code if bootstrap validation does not work
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(fucntion () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+     </script>
